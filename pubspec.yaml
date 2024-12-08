@@ -1,0 +1,69 @@
+name: gps_store
+description: "A new Flutter project."
+publish_to: 'none'  # لا يتم نشره بشكل عام
+
+version: 1.0.0+1  # إصدار التطبيق
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"  # تحديد نطاق نسخة SDK المطلوبة (تأكد من توافقه مع النسخة التي تستخدمها)
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pdf: ^3.8.0
+  printing: ^5.6.0
+  screenshot: ^3.0.0
+  image_picker: ^1.1.2
+  image_cropper: ^8.0.2  # إضافة مكتبة image_cropper
+  uuid: ^4.5.1
+  shared_preferences: ^2.0.13  # مكتبة لتخزين البيانات بشكل محلي
+  cupertino_icons: ^1.0.8  # أيقونات iOS
+  firebase_core: ^3.8.1  # مكتبة Firebase الأساسية
+  firebase_messaging: ^15.1.6
+  cloud_firestore: ^5.4.4  # مكتبة قاعدة البيانات Firestore
+  intl: ^0.19.0
+  firebase_auth: ^5.3.1  # مكتبة توثيق المستخدمين
+  firebase_storage: ^12.3.3  # مكتبة لتخزين الملفات (اختياري)
+  url_launcher: ^6.0.20  # مكتبة لفتح الروابط الخارجية
+  font_awesome_flutter: ^10.4.0  # مكتبة FontAwesome لإضافة أيقونات إضافية مثل WhatsApp
+  arabic_numbers: ^1.0.0  # مكتبة لتنسيق الأرقام العربية
+  path_provider: ^2.1.5  # تأكد من استخدام الإصدار المناسب
+  permission_handler: ^11.3.1  # تأكد من إضافة النسخة المناسبة
+  open_file: ^3.5.9
+  share_plus: ^10.1.1
+  excel: ^2.0.5
+  lottie: ^3.1.3
+
+  flutter_localizations:  # إضافة دعم اللغات المحلية
+    sdk: flutter
+  awesome_dialog: ^3.2.1
+
+fonts:
+  - family: ArabicFont
+    fonts:
+      - asset: assets/fonts/Amiri-Regular.ttf  # تأكد من وجود الخط في هذا المسار
+  - family: Cairo
+    fonts:
+      - asset: assets/fonts/Cairo-Regular.ttf  # تأكد من وجود الخط في هذا المسار
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1  # مكتبة لتغيير أيقونة التطبيق
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # مكتبة لفحص التعليمات البرمجية
+
+flutter:
+  uses-material-design: true  # تفعيل استخدام تصميم المواد
+  assets:
+    - assets/logo.png  # تأكد من وضع الصورة في المسار الصحيح
+    - D:/2/project/gps_store/lib/assets/background.png
+    - assets/fonts/Amiri-Regular.ttf  # إضافة مسار الخط للتأكد من توفره
+    - assets/fonts/Cairo-Regular.ttf  # إضافة مسار الخط للتأكد من توفره
+    - lib/assets/lottie/books.json
+    - lib/assets/lottie/booksloading.json
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"  # تأكد من أن المسار صحيح للصورة
